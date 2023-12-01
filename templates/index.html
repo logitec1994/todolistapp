@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}ToDo App{% endblock %}</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/normilize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/popup.css') }}">
+    {% block style %}{% endblock %}
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+    {% block content %}{% endblock %}
+
+    <div id="popupContainer" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopupBtn">&times;</span>
+            <p id="popup-text">Это всплывающее окно!</p>
+        </div>
+    </div>
+
+
+    {% block script %}{% endblock %}
+
+</body>
+
+</html>

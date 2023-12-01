@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/styles/normilize.css">
+</head>
+
+<style>
+    div.form_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    div.form_header {
+        width: 400px;
+        height: 45px;
+        background-color: #3cf;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    div.form_logo {
+        width: 80px;
+        background-image: url(./static/images/form-header.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+    }
+
+    div.form_text {
+        margin-left: 10px;
+        font-size: 1.5em;
+        /* Размер шрифта */
+        font-weight: bold;
+        /* Жирный шрифт */
+        color: #333;
+        /* Цвет текста */
+        text-align: center;
+        /* Выравнивание по центру */
+        font-family: 'Courier New', 'Courier', monospace;
+        font-weight: bold;
+        line-height: 45px;
+    }
+
+    div.form_center {
+        width: 400px;
+        margin-top: 20px;
+    }
+
+    div.form_center input[type="text"] {
+        width: 295px;
+        padding: 10px;
+        margin: 5px 0;
+        font-size: 16px;
+        border: 1px solid #394a6d;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #333333;
+    }
+
+    div.form_center input[type="text"]:focus {
+        outline: none;
+        border-color: #1f2e47;
+        /* Изменяем цвет границы при фокусе */
+        box-shadow: inset 0 0 1px #1f2e47;
+        /* Тень при фокусе */
+    }
+
+    div.form_center button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #3ae;
+        /* Уменьшаем яркость цвета морской пены на 20% */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    div.form_center button:hover {
+        background-color: #48c;
+        /* Изменяем цвет фона при наведении на кнопку */
+    }
+
+    div.form_center button:active {
+        background-color: #2c8;
+        /* Изменяем цвет фона при активации кнопки (нажатии) */
+    }
+</style>
+
+<body>
+    <div class="form_container">
+        <div class="form_header">
+            <div class="form_logo"></div>
+            <div class="form_text">Add tasks form</div>
+        </div>
+        <div class="form_center">
+            <input type="text" placeholder="Enter your task">
+            <button>Add task</button>
+        </div>
+    </div>
+    <div class="task_container">
+
+    </div>
+</body>
+
+</html>

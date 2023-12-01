@@ -1,0 +1,116 @@
+/* Form */
+div.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+div.form_header {
+    width: 400px;
+    height: 45px;
+    background-color: #3cf;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+div.form_logo {
+    width: 80px;
+    background-image: url(../images/form-header.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+div.form_text {
+    margin-left: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    font-family: 'Courier New', 'Courier', monospace;
+    font-weight: bold;
+    line-height: 45px;
+}
+
+div.form_center {
+    width: 400px;
+    margin-top: 20px;
+    background-color: #3cf;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+div.form_center input[type="text"] {
+    width: 295px;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    border: 1px solid #394a6d;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #333333;
+}
+
+div.form_center input[type="text"]:focus {
+    outline: none;
+    border-color: #1f2e47;
+    box-shadow: inset 0 0 1px #1f2e47;
+}
+
+div.form_center button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #3ae;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+div.form_center button:hover {
+    background-color: #48c;
+}
+
+div.form_center button:active {
+    background-color: #2c8;
+}
+
+/* Task */
+div.task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    margin: 25px auto;
+}
+
+div.task-header {
+    width: calc(400px - 30px);
+    background-color: hsl(90, 45%, 58%);
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding-left: 35px;
+}
+
+div.task-center {
+    background-color: hsl(210, 80%, 70%);
+    width: 400px;
+    padding: 5px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.task-center span i {
+    cursor: pointer;
+}
